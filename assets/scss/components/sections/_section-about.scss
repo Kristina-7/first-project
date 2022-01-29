@@ -79,25 +79,19 @@ h2 {
         }
         @include sm {
           letter-spacing: 0.055em;
-
           font-size: 1rem;
         }
         &:first-of-type {
           position: relative;
-
           margin-top: -5px;
         }
         &:first-of-type::after {
           position: absolute;
           top: 0;
-
           width: 2px;
           height: 200px;
-
           content: "";
-
           background-color: rgba(99, 117, 136, 0.1);
-
           @include lg-min {
             right: -50px;
           }
@@ -119,9 +113,7 @@ h2 {
     &__image {
       display: grid;
       align-content: center;
-
       max-width: 271px;
-
       justify-items: center;
       img {
         max-width: 100%;
