@@ -52,19 +52,14 @@ h2 {
     justify-items: center;
     &__content {
       p {
-        letter-spacing: 0.049em;
+        letter-spacing: 0.055em;
         color: $color-gray;
         font-family: $font-main;
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 1.15;
-        @include sm-min {
-          letter-spacing: 0.055em;
-          font-size: 1rem;
-        }
-        @include sm {
-          letter-spacing: 0.055em;
-          font-size: 1rem;
+        @include lg-min {
+          font-size: 1.125rem;
         }
         &:first-of-type {
           position: relative;
