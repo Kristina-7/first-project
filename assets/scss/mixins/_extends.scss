@@ -1,0 +1,20 @@
+@use "../presets" as *;
+@use "mixins" as *;
+@use "mixins-media" as *;
+
+%container {
+  max-width: $ul;
+  margin: 0 auto;
+  padding: 0 $gap;
+}
+%h2style {
+  margin-top: 0;
+
+  letter-spacing: 0.1em;
+
+  color: $color-primary;
+
+  font-family: $font-header;
+  font-weight: bold;
+  line-height: 1.2em;
+}

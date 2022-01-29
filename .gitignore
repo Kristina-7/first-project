@@ -1,0 +1,12 @@
+node_modules/
+# IntellijIdea files
+.idea/
+.vscode/
+.DS_Store
+samples
+package.json
+package-lock.json  
+gulpfile.js
+.yarnrc
+.yarn.package.json
+.csscomb.json

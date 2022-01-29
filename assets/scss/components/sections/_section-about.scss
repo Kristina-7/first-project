@@ -1,0 +1,132 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+h2 {
+  @extend %h2style;
+  @include lg-min {
+    margin-bottom: 3rem;
+
+    font-size: 2.5rem;
+  }
+  @include lg-md {
+    margin-bottom: 2.625rem;
+
+    letter-spacing: 0.2rem;
+
+    font-size: 2rem;
+  }
+  @include md {
+    margin-bottom: 2.25rem;
+
+    letter-spacing: 2.4px;
+
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
+  @include sm {
+    text-align: center;
+  }
+}
+.about {
+  padding: $gap-x5 0;
+
+  background-color: $color-gray-light;
+
+  @include lg-md {
+    padding: $gap-x4 0;
+  }
+  @include md {
+    padding: $gap-x3 0;
+  }
+  .about-container {
+    display: grid;
+    align-content: center;
+
+    @extend %container;
+    gap: $gap-x5;
+    grid-template-columns: 1fr 271px;
+    @include lg-md {
+      gap: 40px;
+      grid-template-columns: 1fr 271px;
+    }
+    @include md-sm {
+      gap: 20px;
+      grid-template-columns: 1fr 236px;
+    }
+    @include sm {
+      gap: 20px;
+      grid-template-columns: 1fr;
+    }
+    justify-items: center;
+    &__content {
+      p {
+        letter-spacing: 0.049em;
+
+        color: $color-gray;
+
+        font-family: $font-main;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.15;
+
+        @include lg {
+          font-size: 1rem;
+        }
+        @include md-sm {
+          letter-spacing: 0.055em;
+
+          font-size: 1rem;
+        }
+        @include sm {
+          letter-spacing: 0.055em;
+
+          font-size: 1rem;
+        }
+        &:first-of-type {
+          position: relative;
+
+          margin-top: -5px;
+        }
+        &:first-of-type::after {
+          position: absolute;
+          top: 0;
+
+          width: 2px;
+          height: 200px;
+
+          content: "";
+
+          background-color: rgba(99, 117, 136, 0.1);
+
+          @include lg-min {
+            right: -50px;
+          }
+          @include lg-md {
+            right: -20px;
+          }
+          @include md-sm {
+            right: -10px;
+          }
+          @include sm {
+            display: none;
+          }
+        }
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__image {
+      display: grid;
+      align-content: center;
+
+      max-width: 271px;
+
+      justify-items: center;
+      img {
+        max-width: 100%;
+        max-height: 480px;
+      }
+    }
+  }
+}
