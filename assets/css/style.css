@@ -703,10 +703,10 @@ a {
   justify-items: center;
 }
 .about .about-container__content p {
-  letter-spacing: 0.049em;
+  letter-spacing: 0.055em;
   color: #637588;
   font-family: "Roboto", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.15;
 }
@@ -1034,6 +1034,9 @@ a {
     margin-bottom: 3rem;
     font-size: 2.5rem;
   }
+  .about .about-container__content p {
+    font-size: 1.125rem;
+  }
   .about .about-container__content p:first-of-type::after {
     right: -50px;
   }
@@ -1045,9 +1048,6 @@ a {
 @media (max-width: 991.8px) {
   .skill-item__title {
     font-size: 1.125rem;
-  }
-  .about .about-container__content p {
-    font-size: 1rem;
   }
 }
 @media (max-width: 991.8px) and (min-width: 768px) {
@@ -1153,10 +1153,6 @@ a {
     gap: 20px;
     grid-template-columns: 1fr 236px;
   }
-  .about .about-container__content p {
-    letter-spacing: 0.055em;
-    font-size: 1rem;
-  }
   .about .about-container__content p:first-of-type::after {
     right: -10px;
   }
@@ -1203,10 +1199,6 @@ a {
   .about .about-container {
     gap: 20px;
     grid-template-columns: 1fr;
-  }
-  .about .about-container__content p {
-    letter-spacing: 0.055em;
-    font-size: 1rem;
   }
   .about .about-container__content p:first-of-type::after {
     display: none;
