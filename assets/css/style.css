@@ -1063,7 +1063,6 @@ a {
   }
   h2 {
     margin-bottom: 2.625rem;
-    letter-spacing: 0.2rem;
     font-size: 2rem;
   }
   .about {
@@ -1129,9 +1128,7 @@ a {
   }
   h2 {
     margin-bottom: 2.25rem;
-    letter-spacing: 2.4px;
     font-size: 1.5rem;
-    line-height: 29px;
   }
   .about {
     padding: 60px 0;
