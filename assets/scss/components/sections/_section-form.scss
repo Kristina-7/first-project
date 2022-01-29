@@ -6,6 +6,7 @@
   background-color: #2d3651;
   .form-container {
     display: grid;
+
     @extend %container;
     gap: $gap;
     grid-template-columns: repeat(3, 1fr);
@@ -29,33 +30,40 @@
         width: 100%;
         height: $gap-x3;
         padding: 1px 30px;
+
         letter-spacing: 0.15em;
+
         color: white;
         border: 2px solid rgba($color-light, 0);
         border-bottom: 2px solid rgba($color-light, 0.2);
         background-color: rgba($color-light, 0.05);
+
         font-size: 1.125rem;
         &::placeholder {
           color: rgba(205, 231, 255, 0.24);
         }
         &:hover {
           transition: 0.8s;
+
           border: 2px solid rgba($color-light, 0.15);
           border-bottom: 2px solid $color-light;
           background-color: rgba($color-light, 0.15);
         }
         &:hover::placeholder {
           transition: 0.8s;
+
           color: rgba($color-light, 0.5);
         }
       }
       .btn-primary {
         letter-spacing: 0.1em;
+
         border-bottom-color: rgba($color-light, 0.2);
         background-color: rgba($color-light, 0.1);
       }
       .btn-primary:hover {
         transition: 0.8s;
+
         border: 2px solid $color-light;
         background-color: $color-accent;
       }

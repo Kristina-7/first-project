@@ -8,7 +8,9 @@
 }
 html {
   overflow-y: scroll;
+
   letter-spacing: 0.1em;
+
   font-family: $font-main;
   font-size: $font-size;
 }
@@ -16,9 +18,12 @@ html {
 h1 {
   text-align: center;
   letter-spacing: 0.08em;
+
   color: $color-light;
+
   font-family: $font-header;
   font-weight: 300;
+
   @include lg-min {
     font-size: 3.75rem;
   }
@@ -32,5 +37,6 @@ h1 {
 
 a {
   text-decoration: none;
+
   color: $color-light;
 }
